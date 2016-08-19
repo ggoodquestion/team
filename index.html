@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>資研社簡介</title>
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="reveal/css/reveal.css">
+        <link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/style.css"><!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+			
+            
+                <!-- ... 開始寫code ... -->
+                <section>松山資研社簡介</section>
+
+                <section><h3>總共有四個組別</h3>
+                <br/>
+                         <h3>大致上分為兩類</h3>
+                         <br/>
+                         <h3>程式組 : 打程式碼的</h3>
+                         <br/>
+                         <h3>多媒體 : RPG與電腦繪圖</h3></section>
+
+                <section><section><h1>程式組</h1>
+                <br/>
+                                  <h3>分為:</h3>
+                                  <h3>C++組</h3>
+                                  <h3>網路組</h3>
+                                  <h3>Java組</h3></section>
+
+                          <section><h1>C++</h1>
+                          <br/>
+                                   <h3>教演算法與解題</h3>
+                                   <h3>訓練邏輯</h3></section>
+
+                          <section><h1>網路組</h1>
+                          <br/>
+                                   <h3>Html教學</h3>
+                                   <h3>網站架設</h3>
+                                   <h3>寫出屬於自己的網站</h3></section>
+
+                          <section><h1>Java組</h1>
+                          <br/>
+                                   <h3>Java Swing 視窗程式教學</h3>
+                                   <h3>由於得需先有基礎程式技能</h3>
+                                   <h3>預計放在額外的社課內</h3>
+                                   <h3>待會的社團介紹影片也因此不會有介紹</h3></section>
+                         </section>
+
+                <section><section><h1>多媒體</h1>
+                <br/>
+                         <h3>分為:</h3>
+                         <h3>RPG組</h3>
+                         <h3>電腦繪圖組</h3></section>
+
+                         <section><h1>RPG組</h1>
+                         <br/>
+                                  <h3>RPG Maker 製作RPG遊戲</h3></section>
+
+                         <section><h1>電腦繪圖組</h1>
+                         <br/>
+                                  <h3>也許你想要找個可以學到美術繪圖的社團</h3>
+                                  <h3>那資研社就是你的好去處了</h3>
+                                  <h3>電腦繪圖組會是你最好的選擇</h3>
+                                  </section>
+                         </section>                
+                <!--結束了-->
+                
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="reveal/lib/js/head.min.js"></script>
+        <script src="reveal/js/reveal.js"></script>
+        <script src="js/sketch.min.js"></script>
+        <script>
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              //-showNotes: true,
+
+              transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+              // Optional reveal.js plugins
+              dependencies: [
+                { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+                { src: 'reveal/plugin/notes/notes.js', async: true },
+                { src: 'reveal/plugin/math/math.js', async: true, callback: function() {
+                  setTimeout( function() {
+                    MathJax.Hub.Config({
+                      SVG: {
+                        scale: 90
+                        },
+                      "HTML-CSS": {
+                        scale: 90,
+                        }
+                      });
+                    }, 2000);
+                  },
+                  config: 'TeX-AMS_HTML-full'
+                },
+                { src: 'js/dazzleSketch.js', async: true }
+              ]
+            });
+        </script>
+    </body>
+</html>
